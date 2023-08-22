@@ -12,7 +12,7 @@ body {
     background: darkmagenta;
     color: white;
     display: flex;
-    padding: 16px;
+    padding: 0 16px;
     font-weight: 900;
   }
   
@@ -21,7 +21,6 @@ body {
     background: #eee;
     color: darkmagenta;
     justify-content: center;
-
   }
 
   .header,
@@ -40,10 +39,7 @@ body {
   
   .container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-shrink: 1;
     padding: 32px;
   }
 
@@ -51,8 +47,6 @@ body {
     text-decoration: none;
     font-size: 24px;
     color: white;
-    flex-shrink: 0;
-
   }
 
   ul {
@@ -61,7 +55,11 @@ body {
     padding: 0;
   }
 
-  .content {
+  li {
+    margin-bottom: 16px;
+  }
+
+  .body {
     display: flex;
     flex: 1;
   }
@@ -70,7 +68,7 @@ body {
     border: 1px solid #eee;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
-    max-width: 300px;
+    width: 300px;
     padding: 16px;
     margin: 16px;
   }
